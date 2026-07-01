@@ -1,1458 +1,938 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wheelchair Taxi Perth | NDIS, Maxi Taxi &amp; Airport Transport 24/7 — Perth Maxi Wheelchair</title>
+<meta name="description" content="Perth's on-time wheelchair taxi service. NDIS bookings, government-subsidised fares (75% off), maxi taxis for groups up to 12, airport shuttles &amp; hospital transport. Available 24/7 across WA — usually there in 20–30 minutes.">
+<meta name="keywords" content="wheelchair taxi Perth, NDIS transport Perth, maxi taxi Perth, disability taxi WA, wheelchair accessible transport, Perth airport shuttle wheelchair, taxi user subsidy scheme">
+<link rel="canonical" href="https://www.perthmaxiwheelchair.com.au/">
 
-  <!-- SEO Meta -->
-  <title>Perth Max In Wheelchair – #1 Wheelchair Taxi Perth 24/7</title>
-  <meta name="description" content="Perth's most trusted wheelchair taxi & NDIS transport. 2 wheelchairs + 4 passengers, 75% government subsidy, airport shuttles & group bookings across all WA suburbs." />
-  <meta name="keywords" content="Wheelchair Taxi Perth, NDIS Transport WA, Airport Shuttle Perth, Maxi Taxi Perth, accessible transport Western Australia" />
-  <link rel="canonical" href="https://perthmaxinwheelchair.com/" />
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Perth Maxi Wheelchair — Wheelchair Taxis, NDIS &amp; Maxi Taxi Bookings">
+<meta property="og:description" content="Reliable wheelchair-accessible transport across Perth &amp; WA. 24/7, government-subsidised, usually there within 20–30 minutes.">
+<meta property="og:url" content="https://www.perthmaxiwheelchair.com.au/">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Perth Maxi Wheelchair — Wheelchair Taxis &amp; NDIS Transport">
+<meta name="twitter:description" content="24/7 wheelchair taxis, maxi taxis and NDIS transport across Perth. Usually there within 20–30 minutes.">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Perth Max In Wheelchair – Wheelchair Taxis & NDIS Transport WA" />
-  <meta property="og:description" content="24/7 accessible taxis, airport shuttles, NDIS bookings & group transport across all WA suburbs. We Get You." />
-  <meta property="og:type" content="website" />
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E3A45">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<!-- JSON-LD structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TaxiService",
+  "name": "Perth Maxi Wheelchair",
+  "image": "https://www.perthmaxiwheelchair.com.au/og-image.jpg",
+  "url": "https://www.perthmaxiwheelchair.com.au/",
+  "telephone": "+61400000000",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "State",
+    "name": "Western Australia"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Perth",
+    "addressRegion": "WA",
+    "addressCountry": "AU"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": []
+}
+</script>
 
-  <style>
-    /* ─── TOKENS ─────────────────────────────────── */
-    :root {
-      --navy:    #0A1628;
-      --navy-mid:#122040;
-      --teal:    #00C2B2;
-      --teal-dim:#009D90;
-      --white:   #FFFFFF;
-      --slate:   #F0F4F8;
-      --slate2:  #E2EAF2;
-      --amber:   #F5A623;
-      --text:    #1A2A3A;
-      --muted:   #5A6F84;
-      --radius:  14px;
-      --shadow:  0 8px 32px rgba(10,22,40,.18);
-      --shadow-lg: 0 20px 60px rgba(10,22,40,.28);
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 
-    /* ─── RESET ──────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--white);
-      overflow-x: hidden;
-    }
-    img { max-width: 100%; display: block; }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
+<style>
+  :root{
+    --navy:#0E3A45;
+    --navy-deep:#0A2A32;
+    --sand:#F6EFE3;
+    --sand-2:#EFE4CF;
+    --wattle:#F2A93C;
+    --wattle-deep:#D98A1F;
+    --coral:#E8654A;
+    --ink:#16262B;
+    --ink-soft:#3E5158;
+    --white:#FFFFFF;
+    --line:rgba(14,58,69,0.14);
+    --radius:14px;
+    --maxw:1180px;
+    --shadow:0 12px 32px -14px rgba(14,58,69,0.35);
+  }
 
-    /* ─── TYPOGRAPHY ─────────────────────────────── */
-    h1,h2,h3,h4 { font-family: 'Poppins', sans-serif; line-height: 1.2; }
-    h1 { font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 800; }
-    h2 { font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: 700; }
-    h3 { font-size: 1.25rem; font-weight: 600; }
-    p  { line-height: 1.7; }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
 
-    /* ─── UTILITIES ──────────────────────────────── */
-    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-    .teal { color: var(--teal); }
-    .amber { color: var(--amber); }
-    .section-label {
-      display: inline-block;
-      font-family: 'Poppins', sans-serif;
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--teal);
-      background: rgba(0,194,178,.1);
-      padding: 5px 14px;
-      border-radius: 100px;
-      margin-bottom: 14px;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: .95rem;
-      padding: 14px 30px;
-      border-radius: 100px;
-      cursor: pointer;
-      border: none;
-      transition: transform .2s, box-shadow .2s, background .2s;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary {
-      background: var(--teal);
-      color: var(--white);
-      box-shadow: 0 6px 24px rgba(0,194,178,.4);
-    }
-    .btn-primary:hover { background: var(--teal-dim); box-shadow: 0 10px 32px rgba(0,194,178,.5); }
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      border: 2px solid rgba(255,255,255,.5);
-    }
-    .btn-outline:hover { background: rgba(255,255,255,.1); border-color: var(--white); }
-    .btn-amber {
-      background: var(--amber);
-      color: var(--navy);
-      box-shadow: 0 6px 24px rgba(245,166,35,.35);
-    }
-    .btn-amber:hover { background: #e0941a; }
+  body{
+    margin:0;
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
 
-    /* ─── FADE-IN ON SCROLL ───────────────────────── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity .65s ease, transform .65s ease;
-    }
-    .reveal.visible { opacity: 1; transform: none; }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    color:var(--navy-deep);
+    margin:0 0 0.4em;
+    line-height:1.08;
+    letter-spacing:-0.01em;
+  }
 
-    /* ─── NAV ────────────────────────────────────── */
-    .nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(10,22,40,.92);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255,255,255,.07);
-      transition: background .3s;
-    }
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 70px;
-    }
-    .nav-logo {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 800;
-      font-size: 1.15rem;
-      color: var(--white);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .nav-logo .logo-icon {
-      width: 36px; height: 36px;
-      background: var(--teal);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-    }
-    .nav-links a {
-      color: rgba(255,255,255,.75);
-      font-size: .9rem;
-      font-weight: 500;
-      transition: color .2s;
-    }
-    .nav-links a:hover { color: var(--teal); }
-    .nav-links .btn { padding: 10px 22px; font-size: .88rem; }
-    .nav-hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 4px;
-    }
-    .nav-hamburger span {
-      display: block; width: 26px; height: 2px;
-      background: var(--white);
-      border-radius: 2px;
-      transition: .3s;
-    }
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 70px; left: 0; right: 0;
-      background: var(--navy);
-      padding: 24px;
-      z-index: 99;
-      flex-direction: column;
-      gap: 18px;
-      border-bottom: 1px solid rgba(255,255,255,.1);
-    }
-    .mobile-menu.open { display: flex; }
-    .mobile-menu a {
-      color: rgba(255,255,255,.85);
-      font-size: 1rem;
-      font-weight: 500;
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
+  p{margin:0 0 1em;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
 
-    /* ─── HERO ───────────────────────────────────── */
-    .hero {
-      min-height: 100vh;
-      background: var(--navy);
-      display: flex;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-      padding-top: 70px;
-    }
-    /* animated gradient sweep */
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(0,194,178,.18) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(0,100,180,.15) 0%, transparent 55%);
-      animation: heroGlow 8s ease-in-out infinite alternate;
-    }
-    @keyframes heroGlow {
-      0%   { opacity: .7; transform: scale(1); }
-      100% { opacity: 1;  transform: scale(1.05); }
-    }
-    /* diagonal cut at bottom */
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -1px; left: 0; right: 0;
-      height: 80px;
-      background: var(--white);
-      clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-      padding: 80px 0 140px;
-    }
-    .hero-left { }
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(0,194,178,.15);
-      border: 1px solid rgba(0,194,178,.3);
-      border-radius: 100px;
-      padding: 6px 16px;
-      margin-bottom: 24px;
-      font-size: .8rem;
-      font-weight: 600;
-      color: var(--teal);
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    .hero-eyebrow .dot { width:7px; height:7px; background:var(--teal); border-radius:50%; animation: pulse 2s infinite; }
-    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.4)} }
-    .hero h1 { color: var(--white); margin-bottom: 22px; }
-    .hero h1 span { color: var(--teal); }
-    .hero-sub {
-      color: rgba(255,255,255,.7);
-      font-size: 1.1rem;
-      margin-bottom: 36px;
-      max-width: 500px;
-      line-height: 1.75;
-    }
-    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
-    .hero-trust {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .trust-pill {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      color: rgba(255,255,255,.6);
-      font-size: .83rem;
-      font-weight: 500;
-    }
-    .trust-pill .icon {
-      width: 28px; height: 28px;
-      background: rgba(0,194,178,.15);
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: .9rem;
-    }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
 
-    /* Booking Card */
-    .hero-right {
-      display: flex;
-      justify-content: center;
-    }
-    .booking-card {
-      background: var(--white);
-      border-radius: 24px;
-      padding: 36px;
-      box-shadow: var(--shadow-lg);
-      width: 100%;
-      max-width: 420px;
-    }
-    .booking-card h3 {
-      color: var(--navy);
-      font-size: 1.4rem;
-      margin-bottom: 6px;
-    }
-    .booking-card .sub { color: var(--muted); font-size: .88rem; margin-bottom: 24px; }
-    .form-group { margin-bottom: 16px; }
-    .form-group label {
-      display: block;
-      font-size: .8rem;
-      font-weight: 600;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      margin-bottom: 6px;
-    }
-    .form-group input,
-    .form-group select {
-      width: 100%;
-      padding: 13px 16px;
-      border: 1.5px solid var(--slate2);
-      border-radius: var(--radius);
-      font-family: 'Inter', sans-serif;
-      font-size: .93rem;
-      color: var(--text);
-      background: var(--white);
-      transition: border-color .2s, box-shadow .2s;
-      appearance: none;
-    }
-    .form-group input:focus,
-    .form-group select:focus {
-      outline: none;
-      border-color: var(--teal);
-      box-shadow: 0 0 0 4px rgba(0,194,178,.12);
-    }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .booking-card .btn { width: 100%; justify-content: center; margin-top: 6px; font-size: 1rem; padding: 15px; }
-    .card-note {
-      text-align: center;
-      font-size: .78rem;
-      color: var(--muted);
-      margin-top: 12px;
-    }
+  .skip-link{
+    position:absolute;left:-999px;top:auto;
+    background:var(--wattle);color:var(--ink);
+    padding:12px 18px;border-radius:8px;font-weight:700;z-index:200;
+  }
+  .skip-link:focus{left:16px;top:16px;}
 
-    /* ─── TRUST STRIP ────────────────────────────── */
-    .trust-strip {
-      background: var(--slate);
-      padding: 30px 0;
-      border-bottom: 1px solid var(--slate2);
-    }
-    .trust-items {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px 40px;
-      align-items: center;
-    }
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 600;
-      font-size: .9rem;
-      color: var(--navy);
-    }
-    .trust-item .badge {
-      width: 40px; height: 40px;
-      background: var(--navy);
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem;
-    }
-    .trust-divider { width: 1px; height: 30px; background: var(--slate2); }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline:3px solid var(--wattle);
+    outline-offset:2px;
+  }
 
-    /* ─── HOW IT WORKS ───────────────────────────── */
-    .how-section { padding: 100px 0; background: var(--white); }
-    .section-header { text-align: center; max-width: 600px; margin: 0 auto 60px; }
-    .section-header p { color: var(--muted); margin-top: 14px; font-size: 1.05rem; }
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-      position: relative;
-    }
-    .steps::before {
-      content: '';
-      position: absolute;
-      top: 36px;
-      left: calc(16.66% + 36px);
-      right: calc(16.66% + 36px);
-      height: 2px;
-      background: linear-gradient(90deg, var(--teal), var(--teal-dim));
-      z-index: 0;
-    }
-    .step {
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-    .step-num {
-      width: 72px; height: 72px;
-      background: var(--navy);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 22px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--teal);
-      position: relative;
-      border: 4px solid var(--white);
-      box-shadow: 0 0 0 3px var(--teal);
-    }
-    .step h3 { margin-bottom: 10px; }
-    .step p { color: var(--muted); font-size: .93rem; }
-    .step-time {
-      display: inline-block;
-      background: rgba(0,194,178,.1);
-      color: var(--teal);
-      font-size: .78rem;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 100px;
-      margin-top: 10px;
-    }
+  /* ===== Top utility bar ===== */
+  .util-bar{
+    background:var(--navy-deep);
+    color:var(--sand);
+    font-size:13.5px;
+  }
+  .util-bar .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    padding-top:8px;padding-bottom:8px;flex-wrap:wrap;gap:6px;
+  }
+  .util-bar a{text-decoration:none;color:var(--sand);opacity:0.9;}
+  .util-bar a:hover{opacity:1;}
+  .util-bar strong{color:var(--wattle);}
 
-    /* ─── SERVICES ───────────────────────────────── */
-    .services-section {
-      padding: 100px 0;
-      background: var(--navy);
-      position: relative;
-      overflow: hidden;
-    }
-    .services-section::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 80% 50%, rgba(0,194,178,.1) 0%, transparent 60%);
-    }
-    .services-section .section-header h2,
-    .services-section .section-header .section-label { color: var(--white); }
-    .services-section .section-header p { color: rgba(255,255,255,.55); }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      position: relative;
-      z-index: 1;
-    }
-    .service-card {
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 20px;
-      padding: 36px;
-      transition: background .3s, transform .3s, border-color .3s;
-    }
-    .service-card:hover {
-      background: rgba(0,194,178,.08);
-      border-color: rgba(0,194,178,.3);
-      transform: translateY(-4px);
-    }
-    .service-card.featured {
-      grid-column: span 2;
-      background: linear-gradient(135deg, rgba(0,194,178,.12), rgba(0,100,180,.12));
-      border-color: rgba(0,194,178,.25);
-    }
-    .service-icon {
-      font-size: 2rem;
-      margin-bottom: 18px;
-    }
-    .service-card h3 { color: var(--white); margin-bottom: 10px; font-size: 1.2rem; }
-    .service-card p { color: rgba(255,255,255,.6); font-size: .93rem; line-height: 1.7; }
-    .service-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 18px;
-    }
-    .service-tag {
-      background: rgba(0,194,178,.15);
-      color: var(--teal);
-      font-size: .75rem;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 100px;
-    }
-    .service-tag.amber-tag {
-      background: rgba(245,166,35,.15);
-      color: var(--amber);
-    }
-    .service-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--teal);
-      font-weight: 600;
-      font-size: .88rem;
-      margin-top: 18px;
-      transition: gap .2s;
-    }
-    .service-link:hover { gap: 10px; }
+  /* ===== Header ===== */
+  header.site{
+    background:var(--sand);
+    position:sticky;top:0;z-index:100;
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 0;
+  }
+  .brand{
+    display:flex;align-items:center;gap:10px;
+    font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;
+    color:var(--navy-deep);text-decoration:none;
+  }
+  .brand .mark{
+    width:38px;height:38px;border-radius:50%;
+    background:var(--navy);display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .brand .mark svg{width:20px;height:20px;}
 
-    /* ─── NDIS SPOTLIGHT ─────────────────────────── */
-    .ndis-section {
-      padding: 100px 0;
-      background: var(--white);
-    }
-    .ndis-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-    .ndis-visual {
-      background: linear-gradient(135deg, var(--navy), var(--navy-mid));
-      border-radius: 24px;
-      padding: 50px 40px;
-      color: var(--white);
-      position: relative;
-      overflow: hidden;
-    }
-    .ndis-visual::before {
-      content: '';
-      position: absolute;
-      top: -40px; right: -40px;
-      width: 200px; height: 200px;
-      background: radial-gradient(circle, rgba(0,194,178,.2), transparent 70%);
-    }
-    .subsidy-stat {
-      font-family: 'Poppins', sans-serif;
-      font-size: 4.5rem;
-      font-weight: 800;
-      color: var(--teal);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .subsidy-label {
-      font-size: 1rem;
-      color: rgba(255,255,255,.7);
-      margin-bottom: 30px;
-    }
-    .ndis-steps { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
-    .ndis-step {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-    }
-    .ndis-step .n-icon {
-      width: 36px; height: 36px;
-      min-width: 36px;
-      background: rgba(0,194,178,.2);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1rem;
-    }
-    .ndis-step .n-text { font-size: .88rem; color: rgba(255,255,255,.75); line-height: 1.6; }
-    .ndis-step .n-text strong { color: var(--white); display: block; margin-bottom: 2px; }
-    .ndis-content h2 { margin-bottom: 16px; }
-    .ndis-content p { color: var(--muted); margin-bottom: 24px; line-height: 1.75; }
-    .ndis-checks { display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
-    .ndis-check {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-    }
-    .check-dot {
-      width: 22px; height: 22px;
-      min-width: 22px;
-      background: var(--teal);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      color: var(--white);
-      font-size: .75rem;
-      margin-top: 2px;
-    }
-    .ndis-check p { color: var(--text); font-size: .93rem; margin: 0; }
+  nav.links{display:flex;gap:26px;align-items:center;}
+  nav.links a{text-decoration:none;font-weight:600;font-size:0.95rem;color:var(--ink-soft);}
+  nav.links a:hover{color:var(--navy-deep);}
 
-    /* ─── TESTIMONIALS ───────────────────────────── */
-    .reviews-section {
-      padding: 100px 0;
-      background: var(--slate);
-    }
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 10px;
-    }
-    .review-card {
-      background: var(--white);
-      border-radius: 20px;
-      padding: 32px;
-      box-shadow: 0 4px 20px rgba(10,22,40,.07);
-      transition: transform .3s, box-shadow .3s;
-    }
-    .review-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(10,22,40,.13);
-    }
-    .stars { color: var(--amber); font-size: 1rem; margin-bottom: 16px; letter-spacing: 2px; }
-    .review-text {
-      color: var(--text);
-      font-size: .93rem;
-      line-height: 1.7;
-      margin-bottom: 20px;
-      font-style: italic;
-    }
-    .reviewer {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .reviewer-avatar {
-      width: 44px; height: 44px;
-      border-radius: 50%;
-      background: var(--navy);
-      display: flex; align-items: center; justify-content: center;
-      color: var(--teal);
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-    }
-    .reviewer-name { font-weight: 600; font-size: .9rem; }
-    .reviewer-detail { color: var(--muted); font-size: .8rem; }
+  .header-cta{display:flex;gap:10px;align-items:center;}
 
-    /* ─── FAQ ────────────────────────────────────── */
-    .faq-section { padding: 100px 0; background: var(--white); }
-    .faq-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 10px;
-    }
-    .faq-item {
-      border: 1.5px solid var(--slate2);
-      border-radius: var(--radius);
-      overflow: hidden;
-      transition: border-color .2s;
-    }
-    .faq-item.open { border-color: var(--teal); }
-    .faq-q {
-      padding: 20px 24px;
-      font-weight: 600;
-      font-size: .95rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      background: var(--white);
-      gap: 16px;
-      transition: background .2s;
-    }
-    .faq-q:hover { background: var(--slate); }
-    .faq-icon {
-      width: 28px; height: 28px; min-width: 28px;
-      background: var(--slate);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--teal);
-      transition: transform .3s, background .2s;
-    }
-    .faq-item.open .faq-icon { transform: rotate(45deg); background: rgba(0,194,178,.15); }
-    .faq-a {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .35s ease, padding .35s ease;
-      padding: 0 24px;
-      color: var(--muted);
-      font-size: .93rem;
-      line-height: 1.75;
-    }
-    .faq-item.open .faq-a {
-      max-height: 200px;
-      padding: 0 24px 20px;
-    }
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 20px;border-radius:999px;
+    font-weight:700;font-size:0.95rem;text-decoration:none;
+    border:2px solid transparent;cursor:pointer;
+    font-family:'Inter',sans-serif;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--wattle);color:var(--ink);box-shadow:0 8px 20px -8px rgba(242,169,60,0.7);}
+  .btn-primary:hover{background:var(--wattle-deep);}
+  .btn-outline{background:transparent;border-color:var(--navy);color:var(--navy-deep);}
+  .btn-outline:hover{background:var(--navy);color:var(--sand);}
+  .btn-white{background:var(--white);color:var(--navy-deep);}
+  .btn-sm{padding:9px 16px;font-size:0.85rem;}
 
-    /* ─── SERVICE AREAS ──────────────────────────── */
-    .areas-section {
-      padding: 80px 0;
-      background: var(--navy);
-      position: relative;
-      overflow: hidden;
-    }
-    .areas-section::after {
-      content: '';
-      position: absolute;
-      bottom: -1px; left: 0; right: 0;
-      height: 60px;
-      background: var(--white);
-      clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    }
-    .areas-section .section-header h2 { color: var(--white); }
-    .areas-section .section-header p { color: rgba(255,255,255,.55); }
-    .areas-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .area-pill {
-      background: rgba(255,255,255,.07);
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: 100px;
-      padding: 8px 16px;
-      text-align: center;
-      color: rgba(255,255,255,.75);
-      font-size: .82rem;
-      font-weight: 500;
-      transition: background .2s, color .2s;
-    }
-    .area-pill:hover { background: rgba(0,194,178,.15); color: var(--teal); }
+  .mobile-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .mobile-toggle svg{width:26px;height:26px;color:var(--navy-deep);}
 
-    /* ─── FINAL CTA ──────────────────────────────── */
-    .cta-section {
-      padding: 100px 0;
-      background: var(--white);
-      text-align: center;
-    }
-    .cta-box {
-      background: linear-gradient(135deg, var(--navy), var(--navy-mid));
-      border-radius: 28px;
-      padding: 80px 60px;
-      position: relative;
-      overflow: hidden;
-    }
-    .cta-box::before {
-      content: '';
-      position: absolute;
-      top: -60px; right: -60px;
-      width: 300px; height: 300px;
-      background: radial-gradient(circle, rgba(0,194,178,.2), transparent 65%);
-    }
-    .cta-box::after {
-      content: '';
-      position: absolute;
-      bottom: -60px; left: -60px;
-      width: 250px; height: 250px;
-      background: radial-gradient(circle, rgba(0,100,180,.2), transparent 65%);
-    }
-    .cta-box h2 { color: var(--white); margin-bottom: 16px; position: relative; z-index: 1; }
-    .cta-box p { color: rgba(255,255,255,.65); font-size: 1.1rem; margin-bottom: 36px; position: relative; z-index: 1; }
-    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
-    .cta-phone {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--teal);
-      margin-top: 24px;
-      position: relative;
-      z-index: 1;
-    }
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    padding:76px 0 90px;
+    overflow:hidden;
+    background:
+      radial-gradient(ellipse 800px 500px at 85% -10%, rgba(242,169,60,0.28), transparent 60%),
+      linear-gradient(180deg, var(--sand) 0%, var(--sand) 100%);
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;
+    color:var(--navy-deep);background:rgba(14,58,69,0.08);
+    padding:7px 14px;border-radius:999px;margin-bottom:20px;font-weight:500;
+  }
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--coral);animation:pulse 2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.35;}}
 
-    /* ─── FOOTER ─────────────────────────────────── */
-    .footer {
-      background: #060f1c;
-      padding: 70px 0 30px;
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 48px;
-      padding-bottom: 48px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-    .footer-brand .logo { font-family:'Poppins',sans-serif; font-size:1.1rem; font-weight:800; color:var(--white); display:flex;align-items:center;gap:10px;margin-bottom:16px; }
-    .footer-brand p { color: rgba(255,255,255,.45); font-size: .88rem; line-height: 1.75; }
-    .footer-slogan { color: var(--teal); font-weight: 600; font-size: .9rem; margin-top: 12px; }
-    .footer-col h4 { color: var(--white); font-size: .9rem; font-weight: 600; margin-bottom: 18px; text-transform: uppercase; letter-spacing: .08em; }
-    .footer-col li { margin-bottom: 10px; }
-    .footer-col a { color: rgba(255,255,255,.45); font-size: .88rem; transition: color .2s; }
-    .footer-col a:hover { color: var(--teal); }
-    .footer-bottom {
-      padding-top: 28px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .footer-bottom p { color: rgba(255,255,255,.3); font-size: .82rem; }
+  .hero h1{
+    font-size:clamp(2.3rem, 4.2vw, 3.6rem);
+    font-weight:600;
+    max-width:16ch;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--wattle-deep);
+    background:linear-gradient(180deg, transparent 62%, rgba(242,169,60,0.35) 62%);
+  }
+  .hero .lede{font-size:1.13rem;color:var(--ink-soft);max-width:46ch;margin-bottom:28px;}
 
-    /* ─── MODAL ──────────────────────────────────── */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,.65);
-      backdrop-filter: blur(6px);
-      z-index: 200;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .modal-overlay.open { display: flex; }
-    .modal {
-      background: var(--white);
-      border-radius: 24px;
-      padding: 44px;
-      width: 100%;
-      max-width: 520px;
-      position: relative;
-      animation: modalIn .35s cubic-bezier(.34,1.56,.64,1);
-    }
-    @keyframes modalIn { from { opacity:0; transform: scale(.9) translateY(20px); } }
-    .modal-close {
-      position: absolute;
-      top: 18px; right: 18px;
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      border: none;
-      background: var(--slate);
-      cursor: pointer;
-      font-size: 1.1rem;
-      display: flex; align-items: center; justify-content: center;
-      color: var(--muted);
-      transition: background .2s;
-    }
-    .modal-close:hover { background: var(--slate2); }
-    .modal h3 { font-size: 1.5rem; margin-bottom: 6px; }
-    .modal .sub { color: var(--muted); font-size: .88rem; margin-bottom: 26px; }
-    .modal .btn { width: 100%; justify-content: center; margin-top: 6px; }
-    .modal .success-message {
-      text-align: center;
-      padding: 24px 0 12px;
-      display: none;
-    }
-    .modal .success-message .big-check {
-      width: 64px; height: 64px;
-      background: rgba(0,194,178,.1);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2rem;
-      margin: 0 auto 16px;
-    }
-    .modal .success-message h3 { margin-bottom: 8px; }
-    .modal .success-message p { color: var(--muted); }
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;}
 
-    /* ─── PHONE STICKY ───────────────────────────── */
-    .sticky-phone {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 90;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: flex-end;
-    }
-    .sticky-phone .sp-btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--teal);
-      color: var(--white);
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: .9rem;
-      padding: 14px 22px;
-      border-radius: 100px;
-      box-shadow: 0 8px 28px rgba(0,194,178,.45);
-      cursor: pointer;
-      border: none;
-      text-decoration: none;
-      transition: transform .2s, box-shadow .2s;
-    }
-    .sticky-phone .sp-btn:hover { transform: scale(1.04); }
-    .sticky-phone .sp-book {
-      background: var(--amber);
-      color: var(--navy);
-      box-shadow: 0 8px 28px rgba(245,166,35,.4);
-    }
+  .hero-trust{display:flex;gap:26px;flex-wrap:wrap;}
+  .hero-trust div{display:flex;flex-direction:column;}
+  .hero-trust strong{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--navy-deep);}
+  .hero-trust span{font-size:0.8rem;color:var(--ink-soft);}
 
-    /* ─── RESPONSIVE ─────────────────────────────── */
-    @media (max-width: 900px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 40px; padding-bottom: 100px; }
-      .hero-right { display: none; }
-      .services-grid { grid-template-columns: 1fr; }
-      .service-card.featured { grid-column: span 1; }
-      .ndis-grid { grid-template-columns: 1fr; }
-      .reviews-grid { grid-template-columns: 1fr; }
-      .faq-grid { grid-template-columns: 1fr; }
-      .areas-grid { grid-template-columns: repeat(3, 1fr); }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .steps { grid-template-columns: 1fr; }
-      .steps::before { display: none; }
-      .nav-links { display: none; }
-      .nav-hamburger { display: flex; }
-      .trust-items { gap: 12px 20px; }
-      .trust-divider { display: none; }
-      .cta-box { padding: 50px 30px; }
-    }
-    @media (max-width: 560px) {
-      .areas-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-grid { grid-template-columns: 1fr; }
-      h1 { font-size: 2rem; }
-      .hero { padding-top: 70px; }
-      .hero-grid { padding: 50px 0 100px; }
-      .hero-ctas { flex-direction: column; }
-      .hero-ctas .btn { width: 100%; justify-content: center; }
-      .hero-trust { gap: 12px; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation: none !important; transition: none !important; }
-    }
-  </style>
+  /* Hero visual: route card */
+  .route-card{
+    background:var(--navy);
+    border-radius:22px;
+    padding:34px;
+    color:var(--sand);
+    position:relative;
+    box-shadow:var(--shadow);
+  }
+  .route-card::before{
+    content:"";position:absolute;inset:0;border-radius:22px;
+    background:radial-gradient(circle at 30% 0%, rgba(255,255,255,0.08), transparent 55%);
+  }
+  .route-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
+  .route-head span{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;opacity:0.7;}
+  .route-eta{font-family:'Fraunces',serif;font-size:2.4rem;color:var(--wattle);line-height:1;}
+
+  .route-line{position:relative;padding-left:26px;margin:26px 0;}
+  .route-stop{position:relative;padding-bottom:26px;}
+  .route-stop:last-child{padding-bottom:0;}
+  .route-stop::before{
+    content:"";position:absolute;left:-26px;top:3px;width:12px;height:12px;border-radius:50%;
+    background:var(--wattle);border:3px solid var(--navy);
+  }
+  .route-stop::after{
+    content:"";position:absolute;left:-21px;top:15px;width:2px;height:calc(100% - 5px);
+    background:repeating-linear-gradient(180deg, var(--wattle) 0 6px, transparent 6px 12px);
+  }
+  .route-stop:last-child::after{display:none;}
+  .route-stop b{display:block;font-size:0.95rem;}
+  .route-stop small{opacity:0.65;font-size:0.78rem;}
+
+  .route-card .foot{
+    display:flex;gap:10px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;
+  }
+  .foot-chip{
+    background:rgba(255,255,255,0.08);border-radius:10px;padding:9px 12px;font-size:0.78rem;flex:1;text-align:center;
+  }
+  .foot-chip strong{display:block;font-family:'Fraunces',serif;font-size:1.05rem;color:var(--wattle);}
+
+  /* ===== Section shell ===== */
+  section{padding:84px 0;}
+  .section-head{max-width:640px;margin:0 auto 48px;text-align:center;}
+  .section-head .eyebrow{background:rgba(14,58,69,0.08);}
+  .section-head h2{font-size:clamp(1.7rem,3vw,2.5rem);}
+  .section-head p{color:var(--ink-soft);font-size:1.05rem;}
+
+  .band-navy{background:var(--navy);color:var(--sand);}
+  .band-navy h2, .band-navy h3{color:var(--sand);}
+  .band-navy .section-head p{color:rgba(246,239,227,0.75);}
+
+  /* ===== Trust strip ===== */
+  .trust-strip{background:var(--navy-deep);padding:22px 0;}
+  .trust-strip .wrap{
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;
+  }
+  .trust-strip .item{
+    display:flex;align-items:center;gap:10px;color:var(--sand);font-size:0.92rem;font-weight:600;flex:1;min-width:210px;
+  }
+  .trust-strip svg{width:22px;height:22px;flex-shrink:0;color:var(--wattle);}
+
+  /* ===== Services grid ===== */
+  .services-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+  }
+  .service-card{
+    background:var(--white);border-radius:var(--radius);padding:28px;
+    border:1px solid var(--line);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+  .service-card .icon{
+    width:48px;height:48px;border-radius:12px;background:var(--sand-2);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .service-card .icon svg{width:24px;height:24px;color:var(--navy);}
+  .service-card h3{font-size:1.15rem;margin-bottom:8px;}
+  .service-card p{color:var(--ink-soft);font-size:0.94rem;margin-bottom:0;}
+  .service-card .badge{
+    display:inline-block;margin-top:12px;font-size:0.72rem;font-weight:700;
+    color:var(--wattle-deep);background:rgba(242,169,60,0.15);
+    padding:4px 10px;border-radius:999px;
+  }
+
+  /* ===== How it works ===== */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;}
+  .steps::before{
+    content:"";position:absolute;top:34px;left:12%;right:12%;height:2px;
+    background:repeating-linear-gradient(90deg, var(--wattle) 0 10px, transparent 10px 20px);
+  }
+  .step{padding:0 20px;position:relative;text-align:center;}
+  .step .num{
+    width:68px;height:68px;border-radius:50%;background:var(--sand);border:2px solid var(--navy);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 20px;position:relative;z-index:2;
+    font-family:'Fraunces',serif;font-size:1.4rem;color:var(--navy-deep);
+  }
+  .step h3{font-size:1.1rem;}
+  .step p{color:var(--ink-soft);font-size:0.93rem;}
+
+  /* ===== Fleet / partners ===== */
+  .fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .fleet-card{
+    background:rgba(255,255,255,0.05);border:1px solid rgba(246,239,227,0.18);
+    border-radius:var(--radius);padding:26px;
+  }
+  .fleet-card .zone{
+    font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;
+    color:var(--wattle);margin-bottom:10px;display:block;
+  }
+  .fleet-card h3{color:var(--sand);font-size:1.2rem;}
+  .fleet-card p{color:rgba(246,239,227,0.72);font-size:0.9rem;}
+  .fleet-card .fleet-tags{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;}
+  .fleet-card .fleet-tags span{
+    font-size:0.72rem;background:rgba(246,239,227,0.1);padding:4px 10px;border-radius:999px;color:var(--sand);
+  }
+
+  /* ===== NDIS / subsidy ===== */
+  .subsidy{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  .subsidy-visual{
+    background:var(--sand-2);border-radius:20px;padding:36px;text-align:center;
+    border:1px solid var(--line);
+  }
+  .subsidy-visual .pct{
+    font-family:'Fraunces',serif;font-size:5rem;color:var(--wattle-deep);line-height:1;
+  }
+  .subsidy-visual .pct span{font-size:2.2rem;vertical-align:top;}
+  .subsidy-visual p{font-size:0.9rem;color:var(--ink-soft);margin-top:8px;}
+  .check-list{list-style:none;padding:0;margin:20px 0;}
+  .check-list li{display:flex;gap:12px;margin-bottom:14px;font-size:0.98rem;}
+  .check-list svg{width:20px;height:20px;color:var(--wattle-deep);flex-shrink:0;margin-top:2px;}
+
+  /* ===== Coverage ===== */
+  .suburb-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+  .suburb-chips span{
+    background:var(--white);border:1px solid var(--line);border-radius:999px;
+    padding:8px 16px;font-size:0.88rem;font-weight:600;color:var(--ink-soft);
+  }
+
+  /* ===== Testimonials ===== */
+  .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .t-card{background:var(--white);border-radius:var(--radius);padding:26px;border:1px solid var(--line);}
+  .t-card .stars{color:var(--wattle-deep);letter-spacing:2px;margin-bottom:12px;}
+  .t-card p{font-size:0.95rem;color:var(--ink-soft);}
+  .t-card .who{font-weight:700;color:var(--navy-deep);font-size:0.9rem;margin-top:14px;}
+
+  /* ===== Booking form ===== */
+  .booking{background:var(--white);border-radius:22px;border:1px solid var(--line);padding:44px;box-shadow:var(--shadow);}
+  .booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .field{display:flex;flex-direction:column;gap:6px;}
+  .field.full{grid-column:1/-1;}
+  .field label{font-size:0.85rem;font-weight:700;color:var(--navy-deep);}
+  .field input, .field select, .field textarea{
+    padding:12px 14px;border-radius:10px;border:1.5px solid var(--line);
+    font-family:'Inter',sans-serif;font-size:0.95rem;background:var(--sand);color:var(--ink);
+  }
+  .field textarea{resize:vertical;min-height:90px;}
+  .radio-row{display:flex;gap:16px;flex-wrap:wrap;}
+  .radio-row label{
+    display:flex;align-items:center;gap:8px;font-weight:600;font-size:0.9rem;
+    background:var(--sand);border:1.5px solid var(--line);padding:10px 14px;border-radius:10px;cursor:pointer;
+  }
+  .booking-submit{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;align-items:center;}
+  .form-note{font-size:0.82rem;color:var(--ink-soft);}
+
+  /* ===== FAQ ===== */
+  details{
+    background:var(--white);border:1px solid var(--line);border-radius:12px;
+    padding:18px 22px;margin-bottom:12px;
+  }
+  details summary{font-weight:700;cursor:pointer;color:var(--navy-deep);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;}
+  details summary::-webkit-details-marker{display:none;}
+  details summary::after{content:"+";font-size:1.4rem;color:var(--wattle-deep);}
+  details[open] summary::after{content:"–";}
+  details p{margin-top:12px;color:var(--ink-soft);font-size:0.94rem;}
+
+  /* ===== CTA banner ===== */
+  .cta-banner{
+    background:linear-gradient(120deg, var(--navy) 0%, var(--navy-deep) 100%);
+    border-radius:24px;padding:56px;text-align:center;color:var(--sand);position:relative;overflow:hidden;
+  }
+  .cta-banner::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 80% 20%, rgba(242,169,60,0.25), transparent 55%);
+  }
+  .cta-banner h2{color:var(--sand);position:relative;}
+  .cta-banner p{color:rgba(246,239,227,0.78);position:relative;max-width:50ch;margin-left:auto;margin-right:auto;}
+  .cta-banner .hero-ctas{justify-content:center;position:relative;}
+
+  /* ===== Footer ===== */
+  footer{background:var(--navy-deep);color:rgba(246,239,227,0.7);padding:60px 0 30px;font-size:0.9rem;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:40px;}
+  .footer-grid h4{color:var(--sand);font-family:'Inter',sans-serif;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:16px;}
+  .footer-grid ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;}
+  .footer-grid a{text-decoration:none;color:rgba(246,239,227,0.7);}
+  .footer-grid a:hover{color:var(--wattle);}
+  .footer-bottom{border-top:1px solid rgba(246,239,227,0.15);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:0.8rem;}
+
+  /* ===== Sticky mobile CTA bar ===== */
+  .mobile-bar{
+    display:none;position:fixed;bottom:0;left:0;right:0;z-index:150;
+    background:var(--white);border-top:1px solid var(--line);
+    padding:10px 14px;gap:10px;
+    box-shadow:0 -8px 24px rgba(0,0,0,0.12);
+  }
+  .mobile-bar a{flex:1;justify-content:center;}
+
+  /* ===== Responsive ===== */
+  @media (max-width:980px){
+    nav.links, .header-cta{display:none;}
+    .mobile-toggle{display:block;}
+    .hero .wrap{grid-template-columns:1fr;}
+    .services-grid, .fleet-grid, .testimonials{grid-template-columns:repeat(2,1fr);}
+    .subsidy{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .steps{grid-template-columns:1fr;gap:34px;}
+    .steps::before{display:none;}
+    .mobile-bar{display:flex;}
+    body{padding-bottom:70px;}
+  }
+  @media (max-width:640px){
+    .services-grid, .fleet-grid, .testimonials{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+    .booking-grid{grid-template-columns:1fr;}
+    .booking{padding:26px;}
+    section{padding:60px 0;}
+    .cta-banner{padding:36px 24px;}
+  }
+</style>
 </head>
 <body>
 
-<!-- ─── NAV ─────────────────────────────────────── -->
-<nav class="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <div class="logo-icon">♿</div>
-        Maxi taxi
-      </a>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#ndis">NDIS</a></li>
-        <li><a href="#areas">Service Areas</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="tel:0400000000" class="btn btn-outline">📞 Call Now</a></li>
-        <li><button class="btn btn-primary" onclick="openModal()">Book Now →</button></li>
-      </ul>
-      <div class="nav-hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </div>
-</nav>
+<a href="#main" class="skip-link">Skip to main content</a>
 
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#services" onclick="toggleMenu()">Services</a>
-  <a href="#ndis" onclick="toggleMenu()">NDIS Bookings</a>
-  <a href="#areas" onclick="toggleMenu()">Service Areas</a>
-  <a href="#faq" onclick="toggleMenu()">FAQ</a>
-  <a href="tel:0400000000">📞 0400 000 000</a>
-  <button class="btn btn-primary" onclick="openModal(); toggleMenu()">Book Now →</button>
+<!-- Utility bar -->
+<div class="util-bar">
+  <div class="wrap">
+    <span>Serving Perth metro &amp; all WA suburbs • <strong>24 hours, 7 days</strong></span>
+    <span>NDIS &amp; TUSS registered · <a href="tel:+61400000000">0400 000 000</a></span>
+  </div>
 </div>
 
-<!-- ─── HERO ─────────────────────────────────────── -->
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-left reveal">
-        <div class="hero-eyebrow">
-          <span class="dot"></span>
-          Available 24 / 7 across Western Australia
-        </div>
-        <h1>Perth's Most Reliable <span>Taxis.</span> We Get You.</h1>
-        <p class="hero-sub">
-          From your doorstep to the airport — we handle the ride, you handle the journey. 
-          NDIS registered, government subsidy accepted, on-time every time.
-        </p>
+<!-- Header -->
+<header class="site">
+  <div class="wrap nav">
+    <a href="#main" class="brand">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5" stroke="#F6EFE3" stroke-width="1.6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="#F2A93C" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span>
+      Perth Maxi Wheelchair
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#fleet">Our fleet</a>
+      <a href="#ndis">NDIS &amp; subsidy</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline btn-sm" href="tel:+61400000000">Call now</a>
+      <a class="btn btn-primary btn-sm" href="#book">Book a ride</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Open menu" onclick="document.getElementById('mnav').classList.toggle('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div id="mnav" style="display:none;" class="wrap">
+    <nav style="display:flex;flex-direction:column;gap:14px;padding:12px 0 20px;">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#fleet">Our fleet</a>
+      <a href="#ndis">NDIS &amp; subsidy</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#book">Book a ride</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> Usually there in 20–30 minutes</span>
+        <h1>A wheelchair taxi in Perth, <em>right when you need one.</em></h1>
+        <p class="lede">Door-to-door wheelchair taxis, maxi taxis and NDIS transport across Perth and WA — new vehicles, trained drivers, and a dispatch line that actually picks up. Government-subsidised fares available.</p>
         <div class="hero-ctas">
-          <button class="btn btn-primary" onclick="openModal()">🚖 Book Now</button>
-          <a href="tel:0400000000" class="btn btn-outline">📞 Call 0400 000 000</a>
+          <a href="tel:+61400000000" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call 0400 000 000
+          </a>
+          <a href="#book" class="btn btn-outline">Get a free quote</a>
         </div>
         <div class="hero-trust">
-          <div class="trust-pill"><div class="icon">✅</div>NDIS Registered</div>
-          <div class="trust-pill"><div class="icon">🏛️</div>75% Gov. Subsidy</div>
-          <div class="trust-pill"><div class="icon">✈️</div>On-Time Guarantee</div>
-          <div class="trust-pill"><div class="icon">👥</div>Up to 12 People</div>
+          <div><strong>75%</strong><span>off fares, govt subsidised</span></div>
+          <div><strong>24/7</strong><span>every day, no exceptions</span></div>
+          <div><strong>12+</strong><span>seats for group bookings</span></div>
+          <div><strong>3</strong><span>partner fleets across Perth</span></div>
         </div>
       </div>
 
-      <!-- Quick Booking Card -->
-      <div class="hero-right reveal" style="transition-delay:.2s">
-        <div class="booking-card">
-          <h3>Quick Booking</h3>
-          <p class="sub">Get a ride in 20–30 minutes</p>
+      <div class="route-card" aria-hidden="true">
+        <div class="route-head">
+          <span>Live booking</span>
+          <span>Today</span>
+        </div>
+        <div class="route-eta">~24 min</div>
+        <div class="route-line">
+          <div class="route-stop"><b>Pickup confirmed</b><small>Nedlands, WA</small></div>
+          <div class="route-stop"><b>Wheelchair-accessible vehicle assigned</b><small>Fleet Partner 02 · Ramp-access maxi</small></div>
+          <div class="route-stop"><b>Driver en route</b><small>Arriving Perth Airport, T1</small></div>
+        </div>
+        <div class="foot">
+          <div class="foot-chip"><strong>2</strong>wheelchairs</div>
+          <div class="foot-chip"><strong>5</strong>ambulant</div>
+          <div class="foot-chip"><strong>NDIS</strong>self-managed</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="form-group">
-            <label>Pickup Location</label>
-            <input type="text" placeholder="Enter your address…" />
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="wrap">
+      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .9-4.5 4.4L18 20l-6-3.2L6 20l1.5-6.7L3 8.9 9 8z"/></svg>New, well-maintained taxis</div>
+      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Available 24 hours, every day</div>
+      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>NDIS &amp; subsidy scheme registered</div>
+      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>Fits 2 wheelchairs + up to 5 more</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we run</span>
+        <h2>Every kind of accessible trip, one phone call away</h2>
+        <p>From a single wheelchair pickup to a 12-person family trip, our vehicles and drivers are set up for it.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="17" cy="19" r="2"/><circle cx="7" cy="19" r="2"/><path d="M7 19h10l2-9H5"/><path d="M5 10L4 4H2"/></svg></div>
+          <h3>Wheelchair taxis</h3>
+          <p>Ramp or hoist access, secured restraints, and drivers trained to help — not just drive.</p>
+          <span class="badge">Most booked</span>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18"/><path d="M8 6l-5 6 5 6"/><path d="M16 6l5 6-5 6"/></svg></div>
+          <h3>Airport shuttles</h3>
+          <p>Perth Airport pickups and drop-offs, timed against your flight — not a generic window.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="10" width="18" height="8" rx="2"/><path d="M7 10V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/></svg></div>
+          <h3>Maxi taxis</h3>
+          <p>2 wheelchairs plus 4–5 ambulant passengers in the one vehicle — no splitting the group.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>NDIS bookings</h3>
+          <p>Plan-managed, self-managed or agency-managed — we work to how your plan is set up.</p>
+          <span class="badge">NDIS registered</span>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Government-subsidised trips</h3>
+          <p>Eligible wheelchair passengers pay a fraction of the fare under WA's subsidy scheme — up to 75% off.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M17 3.13a4 4 0 0 1 0 7.75M21 21v-2a4 4 0 0 0-3-3.85"/></svg></div>
+          <h3>Hospital &amp; private bookings</h3>
+          <p>Appointments, treatments and discharge transport, booked directly by patients, family or staff.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Group &amp; party transport</h3>
+          <p>Birthdays, weddings, day trips — book for groups of 12 or more and keep everyone together.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3>On-time, every time</h3>
+          <p>No long waits — most pickups land within 20–30 minutes of your call.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20l-7-7a5 5 0 1 1 7-7 5 5 0 1 1 7 7z"/></svg></div>
+          <h3>Comfortable, reliable rides</h3>
+          <p>Newer taxis, climate control, and drivers who treat every trip like it's the only one that day.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" style="background:var(--white);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The process</span>
+        <h2>Book, confirm, ride — in three steps</h2>
+        <p>Anytime, day or night. No app to download, no account to set up.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>Book</h3>
+          <p>Call, WhatsApp, or fill in the quote form with your pickup, drop-off and passenger details.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>Confirm</h3>
+          <p>Dispatch matches you with the nearest available vehicle from our three-partner fleet.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>Ride</h3>
+          <p>Your driver arrives in 20–30 minutes, secures the wheelchair, and gets you there on time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLEET / PARTNERS -->
+  <section id="fleet" class="band-navy">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="background:rgba(246,239,227,0.12);color:var(--sand);">Our network</span>
+        <h2>Three trusted operators. One phone number.</h2>
+        <p>We run bookings across three partner fleets covering greater Perth, so there's almost always a wheelchair-accessible vehicle close to you.</p>
+      </div>
+      <div class="fleet-grid">
+        <div class="fleet-card">
+          <span class="zone">Zone 01 · Perth &amp; inner suburbs</span>
+          <h3>Central Fleet Partner</h3>
+          <p>CBD, Fremantle, Victoria Park and the river suburbs. Fastest response for hospital and airport runs.</p>
+          <div class="fleet-tags"><span>Wheelchair vans</span><span>Maxi taxis</span><span>NDIS</span></div>
+        </div>
+        <div class="fleet-card">
+          <span class="zone">Zone 02 · Northern suburbs</span>
+          <h3>Northside Fleet Partner</h3>
+          <p>Joondalup, Wanneroo, Stirling and surrounds. Regular hospital transfers and school-hours bookings.</p>
+          <div class="fleet-tags"><span>Wheelchair vans</span><span>Group transport</span><span>NDIS</span></div>
+        </div>
+        <div class="fleet-card">
+          <span class="zone">Zone 03 · Southern &amp; eastern suburbs</span>
+          <h3>Southside Fleet Partner</h3>
+          <p>Rockingham, Armadale, Mandurah and the hills. Longer-distance and party bookings covered here.</p>
+          <div class="fleet-tags"><span>Wheelchair vans</span><span>12-seat maxi</span><span>NDIS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NDIS / SUBSIDY -->
+  <section id="ndis">
+    <div class="wrap subsidy">
+      <div>
+        <span class="eyebrow">NDIS &amp; the subsidy scheme</span>
+        <h2>Most wheelchair passengers pay a fraction of the fare</h2>
+        <p style="color:var(--ink-soft);">If you're an eligible wheelchair passenger under WA's Taxi User Subsidy Scheme, government support can cover up to 75% of your fare. We handle the paperwork end so you don't have to.</p>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Works with plan-managed, self-managed and agency-managed NDIS plans</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Subsidy cards accepted directly in the vehicle</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Recurring bookings for regular appointments or therapy</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Invoicing support for plan managers on request</li>
+        </ul>
+        <a href="#book" class="btn btn-primary">Book an NDIS trip</a>
+      </div>
+      <div class="subsidy-visual">
+        <div class="pct">75<span>%</span></div>
+        <p>off eligible fares for wheelchair passengers under the government subsidy scheme.</p>
+        <hr style="border:none;border-top:1px solid var(--line);margin:24px 0;">
+        <p style="margin-bottom:0;font-weight:600;color:var(--navy-deep);">Not sure if you qualify? Tell us on the call — we'll check for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE -->
+  <section id="coverage" style="background:var(--white);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Where we go</span>
+        <h2>Perth metro, and every suburb around it</h2>
+        <p>If it's in Western Australia, our dispatch team can get a wheelchair-accessible vehicle to you.</p>
+      </div>
+      <div class="suburb-chips">
+        <span>Perth CBD</span><span>Fremantle</span><span>Joondalup</span><span>Rockingham</span>
+        <span>Armadale</span><span>Midland</span><span>Mandurah</span><span>Cannington</span>
+        <span>Victoria Park</span><span>Subiaco</span><span>Wanneroo</span><span>Stirling</span>
+        <span>Cockburn</span><span>Gosnells</span><span>Kalamunda</span><span>+ all WA suburbs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">From our passengers</span>
+        <h2>What booking with us actually looks like</h2>
+      </div>
+      <div class="testimonials">
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p>Called for a hospital discharge pickup and the van was outside in under half an hour. Driver knew exactly how to secure the chair.</p>
+          <div class="who">— Family booking, Nedlands</div>
+        </div>
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p>We book weekly for therapy appointments through our NDIS plan. Same reliability every single time, no surprises on the invoice.</p>
+          <div class="who">— NDIS participant, Joondalup</div>
+        </div>
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p>Booked a maxi taxi for a 12-person birthday trip with two wheelchairs in the group. Everyone travelled together, no fuss.</p>
+          <div class="who">— Group booking, Rockingham</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section id="book" style="background:var(--sand-2);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Book now</span>
+        <h2>Get a wheelchair taxi on the way</h2>
+        <p>Fill this in and it opens a pre-filled WhatsApp message straight to dispatch — or call if it's urgent.</p>
+      </div>
+
+      <form class="booking" id="bookingForm">
+        <div class="booking-grid">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" required placeholder="Your name">
           </div>
-          <div class="form-group">
-            <label>Destination</label>
-            <input type="text" placeholder="Where are you going?" />
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" required placeholder="04xx xxx xxx">
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Date & Time</label>
-              <input type="datetime-local" />
+          <div class="field">
+            <label for="pickup">Pickup address</label>
+            <input type="text" id="pickup" required placeholder="Street, suburb">
+          </div>
+          <div class="field">
+            <label for="dropoff">Drop-off address</label>
+            <input type="text" id="dropoff" required placeholder="Street, suburb">
+          </div>
+          <div class="field">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+          </div>
+          <div class="field">
+            <label for="time">Time</label>
+            <input type="time" id="time" required>
+          </div>
+          <div class="field">
+            <label for="wheelchairs">Wheelchairs</label>
+            <select id="wheelchairs">
+              <option>1</option><option>2</option><option>None — ambulant only</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="passengers">Total passengers</label>
+            <select id="passengers">
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6–12 (group booking)</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label>Is this an NDIS or subsidy-scheme booking?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="ndis" value="NDIS plan"> NDIS plan</label>
+              <label><input type="radio" name="ndis" value="Govt subsidy scheme"> Govt subsidy scheme</label>
+              <label><input type="radio" name="ndis" value="No" checked> No / private booking</label>
             </div>
-            <div class="form-group">
-              <label>Passengers</label>
-              <select>
-                <option>1 Passenger</option>
-                <option>2 Passengers</option>
-                <option>1 Wheelchair</option>
-                <option>2 Wheelchairs</option>
-                <option>Group (5–12)</option>
-              </select>
-            </div>
           </div>
-          <button class="btn btn-primary" onclick="submitQuickBook()">Book My Ride →</button>
-          <p class="card-note">🔒 No card needed. Confirm by phone.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── TRUST STRIP ──────────────────────────────── -->
-<div class="trust-strip">
-  <div class="container">
-    <div class="trust-items">
-      <div class="trust-item"><div class="badge">♿</div> Wheelchair Specialist</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item"><div class="badge">🏛️</div> Govt. Subsidy Accepted</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item"><div class="badge">🕐</div> 24/7 Availability</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item"><div class="badge">✈️</div> Airport On-Time Guarantee</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item"><div class="badge">📋</div> NDIS Registered Provider</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item"><div class="badge">👨‍👩‍👧‍👦</div> Groups up to 12</div>
-    </div>
-  </div>
-</div>
-
-<!-- ─── HOW IT WORKS ─────────────────────────────── -->
-<section class="how-section" id="how">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label">How It Works</div>
-      <h2>Riding with us is effortless</h2>
-      <p>Three simple steps and you're on your way — no confusing apps, no surprises.</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="step-num">1</div>
-        <h3>Book Your Ride</h3>
-        <p>Use our quick form, call us, or book via the NDIS portal. Tell us your pickup, destination, and any wheelchair needs.</p>
-        <div class="step-time">Takes 2 minutes</div>
-      </div>
-      <div class="step reveal" style="transition-delay:.15s">
-        <div class="step-num">2</div>
-        <h3>Get Matched</h3>
-        <p>We confirm your booking and match you with the closest accessible vehicle. You'll receive an SMS with your driver's details.</p>
-        <div class="step-time">Confirmation in minutes</div>
-      </div>
-      <div class="step reveal" style="transition-delay:.3s">
-        <div class="step-num">3</div>
-        <h3>Ride Comfortably</h3>
-        <p>Your driver arrives, assists with boarding, and gets you there safely — on time, every time.</p>
-        <div class="step-time">Arrive in 20–30 mins</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── SERVICES ─────────────────────────────────── -->
-<section class="services-section" id="services">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label">Our Services</div>
-      <h2>Every journey, fully accessible</h2>
-      <p>Specialised transport solutions for individuals, families, NDIS participants, and groups across all WA suburbs.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card featured reveal">
-        <div class="service-icon">♿</div>
-        <h3>Wheelchair Taxi Service</h3>
-        <p>Our flagship service is built around you. Each vehicle carries up to <strong style="color:#fff">2 wheelchairs plus 4–5 additional passengers</strong> in a single trip. All vehicles feature hydraulic ramps, secure tie-down systems, and air conditioning for complete comfort. Eligible wheelchair users receive a <strong style="color:var(--amber)">75% government fare subsidy</strong> — meaning you pay just 25% of your journey cost. We also accept private bookings direct from hospitals and aged care facilities.</p>
-        <div class="service-tags">
-          <span class="service-tag">2 Wheelchairs + 4–5 Pax</span>
-          <span class="service-tag amber-tag">75% Gov. Subsidy</span>
-          <span class="service-tag">Hospital Bookings</span>
-          <span class="service-tag">Hydraulic Ramp</span>
-        </div>
-        <button class="service-link" onclick="openModal()">Book Wheelchair Taxi →</button>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">✈️</div>
-        <h3>Airport Shuttle Perth</h3>
-        <p>Never miss a flight again. Our airport shuttle service comes with an <strong style="color:#fff">On-Time Guarantee</strong>. We track your flight in real time and adjust for delays. Fully accessible vehicles for mobility aid users.</p>
-        <div class="service-tags">
-          <span class="service-tag amber-tag">⏰ On-Time Guarantee</span>
-          <span class="service-tag">Flight Tracking</span>
-          <span class="service-tag">PER Airport</span>
-        </div>
-        <button class="service-link" onclick="openModal()">Book Airport Shuttle →</button>
-      </div>
-
-      <div class="service-card reveal" style="transition-delay:.1s">
-        <div class="service-icon">📋</div>
-        <h3>NDIS & Government Transport</h3>
-        <p>Registered NDIS transport provider. We handle all paperwork and claim processes directly with the NDIA. No out-of-pocket cost surprises — just reliable, dignified transport.</p>
-        <div class="service-tags">
-          <span class="service-tag">NDIS Registered</span>
-          <span class="service-tag">Direct Billing</span>
-          <span class="service-tag">Plan Managed</span>
-        </div>
-        <a href="#ndis" class="service-link">Learn About NDIS →</a>
-      </div>
-
-      <div class="service-card reveal" style="transition-delay:.15s">
-        <div class="service-icon">🎉</div>
-        <h3>Group & Maxi Taxi Bookings</h3>
-        <p>Heading to a wedding, hospital appointment, event, or airport run? Our Maxi Taxis carry <strong style="color:#fff">up to 12 passengers</strong> in comfort. Perfect for families, school groups, and aged care outings.</p>
-        <div class="service-tags">
-          <span class="service-tag">Up to 12 People</span>
-          <span class="service-tag">Events & Parties</span>
-          <span class="service-tag">Aged Care Outings</span>
-        </div>
-        <button class="service-link" onclick="openModal()">Book Group Transport →</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── NDIS SPOTLIGHT ────────────────────────────── -->
-<section class="ndis-section" id="ndis">
-  <div class="container">
-    <div class="ndis-grid">
-      <div class="ndis-visual reveal">
-        <div class="subsidy-stat">75%</div>
-        <div class="subsidy-label">of your fare paid by the government</div>
-        <p style="color:rgba(255,255,255,.6); font-size:.9rem; margin-bottom:24px;">Eligible wheelchair users in WA pay just 25 cents in every dollar. The Government Subsidised Taxi Scheme (GSTS) and NDIS cover the rest — we process it all for you.</p>
-        <div class="ndis-steps">
-          <div class="ndis-step">
-            <div class="n-icon">1</div>
-            <div class="n-text"><strong>Register with GSTS or NDIS</strong>Obtain your taxi subsidy card via Transport for WA or set up your NDIS plan with transport included.</div>
-          </div>
-          <div class="ndis-step">
-            <div class="n-icon">2</div>
-            <div class="n-text"><strong>Book with us</strong>Mention your NDIS or subsidy details when booking — by phone, online, or via your support coordinator.</div>
-          </div>
-          <div class="ndis-step">
-            <div class="n-icon">3</div>
-            <div class="n-text"><strong>Ride and relax</strong>Present your card to your driver. We claim the subsidy directly. You pay only your portion.</div>
+          <div class="field full">
+            <label for="notes">Anything else we should know</label>
+            <textarea id="notes" placeholder="Flight number, hospital ward, accessibility needs, etc."></textarea>
           </div>
         </div>
-      </div>
-      <div class="ndis-content reveal" style="transition-delay:.2s">
-        <div class="section-label">NDIS & Government Subsidies</div>
-        <h2>Transport support, handled for you</h2>
-        <p>Navigating NDIS transport doesn't have to be stressful. As a registered NDIS transport provider, we work directly with your plan manager or the NDIA to make sure every ride is covered correctly. Our drivers are trained in disability assistance and understand your rights.</p>
-        <div class="ndis-checks">
-          <div class="ndis-check"><div class="check-dot">✓</div><p>Registered NDIS provider — we bill NDIA directly</p></div>
-          <div class="ndis-check"><div class="check-dot">✓</div><p>WA Government Subsidised Taxi Scheme (GSTS) accepted</p></div>
-          <div class="ndis-check"><div class="check-dot">✓</div><p>Eligible for both Self-Managed and Plan-Managed participants</p></div>
-          <div class="ndis-check"><div class="check-dot">✓</div><p>Hospital discharge transport at short notice</p></div>
-          <div class="ndis-check"><div class="check-dot">✓</div><p>Support workers welcome — travel together at no extra charge</p></div>
-          <div class="ndis-check"><div class="check-dot">✓</div><p>Detailed receipts and invoicing provided automatically</p></div>
-        </div>
-        <button class="btn btn-primary" onclick="openModal()">Book NDIS Transport →</button>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ─── TESTIMONIALS ─────────────────────────────── -->
-<section class="reviews-section" id="reviews">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label">What People Say</div>
-      <h2>Real journeys, real feedback</h2>
-      <p>Trusted by NDIS participants, families, hospitals, and aged care facilities across Perth.</p>
+        <div class="booking-submit">
+          <button type="submit" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.87 11.87 0 0012.06 0C5.5 0 .17 5.33.17 11.9c0 2.1.55 4.14 1.6 5.94L0 24l6.32-1.66a11.86 11.86 0 005.72 1.46h.01c6.56 0 11.9-5.33 11.9-11.9 0-3.18-1.24-6.17-3.43-8.42zM12.05 21.6a9.7 9.7 0 01-4.95-1.36l-.35-.21-3.75.98 1-3.65-.23-.37a9.75 9.75 0 01-1.5-5.2c0-5.38 4.38-9.76 9.78-9.76a9.7 9.7 0 016.9 2.87 9.7 9.7 0 012.86 6.9c0 5.39-4.38 9.8-9.76 9.8z"/></svg>
+            Send booking via WhatsApp
+          </button>
+          <a href="tel:+61400000000" class="btn btn-outline">Or call 0400 000 000</a>
+          <span class="form-note">We reply within minutes, day or night.</span>
+        </div>
+      </form>
     </div>
-    <div class="reviews-grid">
-      <div class="review-card reveal">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"After my spinal surgery, Perth Max In Wheelchair became my lifeline. The drivers always help me board safely and the 75% subsidy makes it truly affordable. I can't imagine using anyone else."</p>
-        <div class="reviewer">
-          <div class="reviewer-avatar">MR</div>
-          <div>
-            <div class="reviewer-name">Margaret R.</div>
-            <div class="reviewer-detail">NDIS Participant · Fremantle</div>
-          </div>
-        </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Good to know</span>
+        <h2>Frequently asked questions</h2>
       </div>
-      <div class="review-card reveal" style="transition-delay:.1s">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"We use them for all hospital discharge transport. Punctual, professional, and the vehicles are immaculate. The on-time guarantee for airport runs is a genuine commitment — they've never missed a flight for our patients."</p>
-        <div class="reviewer">
-          <div class="reviewer-avatar">ST</div>
-          <div>
-            <div class="reviewer-name">Sarah T., Patient Liaison</div>
-            <div class="reviewer-detail">Royal Perth Hospital</div>
-          </div>
-        </div>
+      <div style="max-width:760px;margin:0 auto;">
+        <details open>
+          <summary>How quickly can a wheelchair taxi actually arrive?</summary>
+          <p>Most pickups across Perth metro land within 20–30 minutes of booking, thanks to our three-partner fleet network covering different zones of the city.</p>
+        </details>
+        <details>
+          <summary>Do you accept NDIS and government subsidy bookings?</summary>
+          <p>Yes — we work with plan-managed, self-managed and agency-managed NDIS plans, and accept government subsidy cards directly in the vehicle for eligible passengers.</p>
+        </details>
+        <details>
+          <summary>How many wheelchairs can one vehicle carry?</summary>
+          <p>Our maxi taxis carry up to 2 wheelchairs, or 1–2 wheelchairs plus 4–5 additional ambulant passengers, depending on the vehicle assigned.</p>
+        </details>
+        <details>
+          <summary>Can you handle a large group booking?</summary>
+          <p>Yes — for parties, events and family trips of 12 people or more, let us know in the notes field and dispatch will arrange the right combination of vehicles.</p>
+        </details>
+        <details>
+          <summary>Do you cover suburbs outside Perth CBD?</summary>
+          <p>Yes — our network covers Perth metro and the surrounding Western Australia suburbs, from Mandurah in the south to Joondalup in the north.</p>
+        </details>
       </div>
-      <div class="review-card reveal" style="transition-delay:.2s">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"Booked a group Maxi for my grandmother's 80th birthday — 9 of us including her wheelchair. The driver was wonderful, patient, and made the whole day stress-free. Highly recommend for family events."</p>
-        <div class="reviewer">
-          <div class="reviewer-avatar">DJ</div>
-          <div>
-            <div class="reviewer-name">David J.</div>
-            <div class="reviewer-detail">Group Booking · Joondalup</div>
-          </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section>
+    <div class="wrap">
+      <div class="cta-banner">
+        <h2>Need a wheelchair taxi right now?</h2>
+        <p>Our dispatch line is open 24 hours a day, every day of the year. Call, WhatsApp, or fill in the form above.</p>
+        <div class="hero-ctas">
+          <a href="tel:+61400000000" class="btn btn-primary">Call 0400 000 000</a>
+          <a href="#book" class="btn btn-white">Book online</a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ─── FAQ ───────────────────────────────────────── -->
-<section class="faq-section" id="faq">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label">FAQ</div>
-      <h2>Questions we hear often</h2>
-      <p>Can't find your answer? Call us on 0400 000 000 anytime — we're always here.</p>
-    </div>
-    <div class="faq-grid reveal">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How do I qualify for the 75% government subsidy? <div class="faq-icon">+</div></div>
-        <div class="faq-a">The WA Government Subsidised Taxi Scheme (GSTS) is available to residents with a permanent disability that prevents them from using public transport. Apply through Transport for WA with a supporting letter from your doctor. Once approved, you receive a taxi subsidy card — just show it to your Perth Max In Wheelchair driver and we handle the rest.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How many wheelchairs can one vehicle carry? <div class="faq-icon">+</div></div>
-        <div class="faq-a">Our wheelchair-accessible vehicles comfortably carry up to 2 wheelchairs secured with certified tie-down systems, plus 4–5 additional seated passengers. For larger groups or multiple wheelchair users, we can arrange a convoy booking — just let us know when you book.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">What is your on-time airport guarantee? <div class="faq-icon">+</div></div>
-        <div class="faq-a">We guarantee to arrive at your pickup address on schedule for airport runs. We monitor your flight status in real time. If we are late due to our error and you miss your flight, we will contribute to reasonable costs incurred. Full details available on request.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Can my support worker travel with me at no extra cost? <div class="faq-icon">+</div></div>
-        <div class="faq-a">Yes. One support worker or carer can travel free of charge in any wheelchair taxi booking. Additional support workers are charged at the standard per-passenger rate. Simply mention your support worker when booking so we prepare the vehicle correctly.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do you service all Perth suburbs and regional WA? <div class="faq-icon">+</div></div>
-        <div class="faq-a">We cover all metro Perth suburbs and many surrounding regional areas of Western Australia. Use our Service Areas section to check your suburb, or call us — if we can't service your area directly, we'll connect you with a trusted partner provider.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How quickly can I get a wheelchair taxi? <div class="faq-icon">+</div></div>
-        <div class="faq-a">For on-demand bookings, we aim to have a driver with you within 20–30 minutes in most metro areas. For peak times, airport runs, or complex needs, we recommend pre-booking at least 2–3 hours in advance. We also offer recurring weekly bookings for regular travel.</div>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
-<!-- ─── SERVICE AREAS ─────────────────────────────── -->
-<section class="areas-section" id="areas">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label">Service Areas</div>
-      <h2>Covering all of Perth & WA</h2>
-      <p style="color:rgba(255,255,255,.55)">We service every Perth suburb and surrounding regions. Not sure about your area? Call us.</p>
-    </div>
-    <div class="areas-grid reveal">
-      <div class="area-pill">Fremantle</div><div class="area-pill">Joondalup</div>
-      <div class="area-pill">Mandurah</div><div class="area-pill">Rockingham</div>
-      <div class="area-pill">Armadale</div><div class="area-pill">Midland</div>
-      <div class="area-pill">Cannington</div><div class="area-pill">Subiaco</div>
-      <div class="area-pill">Claremont</div><div class="area-pill">Canning Vale</div>
-      <div class="area-pill">Balcatta</div><div class="area-pill">Osborne Park</div>
-      <div class="area-pill">Bentley</div><div class="area-pill">Victoria Park</div>
-      <div class="area-pill">South Perth</div><div class="area-pill">Bayswater</div>
-      <div class="area-pill">Morley</div><div class="area-pill">Inglewood</div>
-      <div class="area-pill">Mt Lawley</div><div class="area-pill">Leederville</div>
-      <div class="area-pill">Northbridge</div><div class="area-pill">Nedlands</div>
-      <div class="area-pill">Cottesloe</div><div class="area-pill">Scarborough</div>
-      <div class="area-pill">Stirling</div><div class="area-pill">Innaloo</div>
-      <div class="area-pill">Mirrabooka</div><div class="area-pill">Malaga</div>
-      <div class="area-pill">Ellenbrook</div><div class="area-pill">Swan Valley</div>
-      <div class="area-pill">Kalamunda</div><div class="area-pill">Forrestfield</div>
-      <div class="area-pill">Thornlie</div><div class="area-pill">Gosnells</div>
-      <div class="area-pill">Willetton</div><div class="area-pill">Booragoon</div>
-      <div class="area-pill">Applecross</div><div class="area-pill">Melville</div>
-      <div class="area-pill">Cockburn</div><div class="area-pill">+ All WA Suburbs</div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── FINAL CTA ──────────────────────────────────── -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-box reveal">
-      <h2>Ready to book your accessible ride?</h2>
-      <p>Book online in under 2 minutes, or call our friendly team any time, day or night.</p>
-      <div class="cta-buttons">
-        <button class="btn btn-primary" onclick="openModal()">🚖 Book Now</button>
-        <a href="tel:0400000000" class="btn btn-outline">📞 0400 000 000</a>
-      </div>
-      <div class="cta-phone">We Get You. 24/7, 365 days a year.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── FOOTER ─────────────────────────────────────── -->
-<footer class="footer">
-  <div class="container">
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="logo"><div class="logo-icon" style="width:32px;height:32px;background:var(--teal);border-radius:8px;display:flex;align-items:center;justify-content:center;">♿</div> Perth Max In Wheelchair</div>
-        <p>Western Australia's most trusted wheelchair taxi and accessible transport provider. NDIS registered, government subsidy accepted, available 24/7 across all WA suburbs.</p>
-        <div class="footer-slogan">We Get You.</div>
+      <div>
+        <h4 style="font-family:'Fraunces',serif;color:var(--sand);font-size:1.15rem;text-transform:none;letter-spacing:0;">Perth Maxi Wheelchair</h4>
+        <p style="max-width:34ch;">Wheelchair taxis, maxi taxis and NDIS transport across Perth and Western Australia. Available 24/7.</p>
       </div>
-      <div class="footer-col">
+      <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="#services">Wheelchair Taxi</a></li>
-          <li><a href="#services">Airport Shuttle</a></li>
-          <li><a href="#ndis">NDIS Transport</a></li>
-          <li><a href="#services">Group Bookings</a></li>
-          <li><a href="#services">Hospital Transport</a></li>
-          <li><a href="#services">Aged Care</a></li>
+          <li><a href="#services">Wheelchair taxis</a></li>
+          <li><a href="#services">Airport shuttles</a></li>
+          <li><a href="#services">Maxi taxis</a></li>
+          <li><a href="#ndis">NDIS bookings</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>Information</h4>
+      <div>
+        <h4>Company</h4>
         <ul>
-          <li><a href="#how">How It Works</a></li>
-          <li><a href="#ndis">NDIS Guide</a></li>
-          <li><a href="#areas">Service Areas</a></li>
+          <li><a href="#fleet">Our fleet</a></li>
+          <li><a href="#coverage">Coverage area</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#book">Book a ride</a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:0400000000">📞 0400 000 000</a></li>
-          <li><a href="mailto:info@perthmaxinwheelchair.com">✉️ info@perthmaxinwheelchair.com</a></li>
-          <li><a href="#">💬 Live Chat</a></li>
-          <li><a href="#">🌐 perthmaxinwheelchair.com</a></li>
+          <li><a href="tel:+61400000000">0400 000 000</a></li>
+          <li><a href="mailto:bookings@perthmaxiwheelchair.com.au">bookings@perthmaxiwheelchair.com.au</a></li>
+          <li>Perth, Western Australia</li>
         </ul>
-        <div style="margin-top:20px">
-          <div class="section-label" style="margin:0 0 8px;font-size:.7rem;">Registered Provider</div>
-          <p style="color:rgba(255,255,255,.35);font-size:.8rem;">NDIS Provider ID: 12345678<br>ABN: 12 345 678 901</p>
-        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Perth Max In Wheelchair. All rights reserved.</p>
-      <p>Serving Western Australia with accessible, dignified transport since day one.</p>
+      <span>© 2026 Perth Maxi Wheelchair. ABN 00 000 000 000.</span>
+      <span>NDIS &amp; Taxi User Subsidy Scheme registered</span>
     </div>
   </div>
 </footer>
 
-<!-- ─── BOOKING MODAL ──────────────────────────────── -->
-<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">✕</button>
-    <div id="modalForm">
-      <h3>Book Your Ride</h3>
-      <p class="sub">Fill in your details and we'll confirm by phone within minutes.</p>
-      <div class="form-group">
-        <label>Your Name</label>
-        <input type="text" placeholder="Full name" id="m-name" />
-      </div>
-      <div class="form-group">
-        <label>Phone Number</label>
-        <input type="tel" placeholder="0400 000 000" id="m-phone" />
-      </div>
-      <div class="form-group">
-        <label>Pickup Address</label>
-        <input type="text" placeholder="Street, Suburb" id="m-pickup" />
-      </div>
-      <div class="form-group">
-        <label>Destination</label>
-        <input type="text" placeholder="Where to?" id="m-dest" />
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Date & Time</label>
-          <input type="datetime-local" id="m-time" />
-        </div>
-        <div class="form-group">
-          <label>Booking Type</label>
-          <select id="m-type">
-            <option>Wheelchair Taxi</option>
-            <option>Airport Shuttle</option>
-            <option>NDIS / Subsidised</option>
-            <option>Group / Maxi Taxi</option>
-            <option>Hospital Discharge</option>
-          </select>
-        </div>
-      </div>
-      <button class="btn btn-primary" onclick="submitBooking()">Confirm Booking →</button>
-      <p class="card-note">🔒 Your details are secure. We'll call to confirm within 5 mins.</p>
-    </div>
-    <div class="success-message" id="modalSuccess">
-      <div class="big-check">✅</div>
-      <h3>Booking Request Sent!</h3>
-      <p>We'll call you within 5 minutes to confirm your ride details. Thank you for choosing Perth Max In Wheelchair.</p>
-      <p style="margin-top:10px;font-weight:600;color:var(--teal)">We Get You.</p>
-    </div>
-  </div>
+<!-- Sticky mobile CTA -->
+<div class="mobile-bar">
+  <a href="tel:+61400000000" class="btn btn-outline btn-sm">Call now</a>
+  <a href="#book" class="btn btn-primary btn-sm">Book a ride</a>
 </div>
 
-<!-- ─── STICKY PHONE ───────────────────────────────── -->
-<div class="sticky-phone">
-  <button class="sp-btn sp-book" onclick="openModal()">🚖 Book Now</button>
-  <a class="sp-btn" href="tel:0400000000">📞 Call Now</a>
-</div>
-
-<!-- ─── SCRIPTS ───────────────────────────────────── -->
 <script>
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => observer.observe(el));
-
-  // Mobile menu
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
-  }
-
-  // Modal
-  function openModal() {
-    document.getElementById('modalOverlay').classList.add('open');
-    document.body.style.overflow = 'hidden';
-    document.getElementById('modalForm').style.display = 'block';
-    document.getElementById('modalSuccess').style.display = 'none';
-  }
-  function closeModal() {
-    document.getElementById('modalOverlay').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  function closeModalOutside(e) {
-    if (e.target === document.getElementById('modalOverlay')) closeModal();
-  }
-  function submitBooking() {
-    const name = document.getElementById('m-name').value.trim();
-    const phone = document.getElementById('m-phone').value.trim();
-    if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
-    document.getElementById('modalForm').style.display = 'none';
-    document.getElementById('modalSuccess').style.display = 'block';
-    setTimeout(closeModal, 5000);
-  }
-  function submitQuickBook() {
-    openModal();
-  }
-
-  // FAQ accordion
-  function toggleFaq(el) {
-    const item = el.closest('.faq-item');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  }
-
-  // Keyboard: close modal on Escape
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  document.getElementById('bookingForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const val = id => document.getElementById(id).value;
+    const ndis = document.querySelector('input[name="ndis"]:checked').value;
+    const msg =
+`New booking request:
+Name: ${val('name')}
+Phone: ${val('phone')}
+Pickup: ${val('pickup')}
+Drop-off: ${val('dropoff')}
+Date: ${val('date')}
+Time: ${val('time')}
+Wheelchairs: ${val('wheelchairs')}
+Passengers: ${val('passengers')}
+Booking type: ${ndis}
+Notes: ${val('notes') || 'None'}`;
+    const url = 'https://wa.me/61400000000?text=' + encodeURIComponent(msg);
+    window.open(url, '_blank');
+  });
 </script>
 
 </body>
