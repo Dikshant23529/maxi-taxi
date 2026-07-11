@@ -29,7 +29,7 @@
   "name": "Perth Maxi Wheelchair",
   "image": "https://www.perthmaxiwheelchair.com.au/og-image.jpg",
   "url": "https://www.perthmaxiwheelchair.com.au/",
-  "telephone": "+61400000000",
+  "telephone": "+61452431230",
   "priceRange": "$$",
   "areaServed": {
     "@type": "State",
@@ -185,7 +185,8 @@
       radial-gradient(ellipse 800px 500px at 85% -10%, rgba(242,169,60,0.28), transparent 60%),
       linear-gradient(180deg, var(--sand) 0%, var(--sand) 100%);
   }
-  .hero .wrap{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;}
+  .hero .wrap{max-width:760px;text-align:center;}
+  .hero .hero-ctas, .hero .hero-trust{justify-content:center;}
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
     font-family:'IBM Plex Mono',monospace;
@@ -200,12 +201,13 @@
     font-size:clamp(2.3rem, 4.2vw, 3.6rem);
     font-weight:600;
     max-width:16ch;
+    margin-left:auto;margin-right:auto;
   }
   .hero h1 em{
     font-style:normal;color:var(--wattle-deep);
     background:linear-gradient(180deg, transparent 62%, rgba(242,169,60,0.35) 62%);
   }
-  .hero .lede{font-size:1.13rem;color:var(--ink-soft);max-width:46ch;margin-bottom:28px;}
+  .hero .lede{font-size:1.13rem;color:var(--ink-soft);max-width:46ch;margin:0 auto 28px;}
 
   .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;}
 
@@ -213,46 +215,6 @@
   .hero-trust div{display:flex;flex-direction:column;}
   .hero-trust strong{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--navy-deep);}
   .hero-trust span{font-size:0.8rem;color:var(--ink-soft);}
-
-  /* Hero visual: route card */
-  .route-card{
-    background:var(--navy);
-    border-radius:22px;
-    padding:34px;
-    color:var(--sand);
-    position:relative;
-    box-shadow:var(--shadow);
-  }
-  .route-card::before{
-    content:"";position:absolute;inset:0;border-radius:22px;
-    background:radial-gradient(circle at 30% 0%, rgba(255,255,255,0.08), transparent 55%);
-  }
-  .route-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
-  .route-head span{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;opacity:0.7;}
-  .route-eta{font-family:'Fraunces',serif;font-size:2.4rem;color:var(--wattle);line-height:1;}
-
-  .route-line{position:relative;padding-left:26px;margin:26px 0;}
-  .route-stop{position:relative;padding-bottom:26px;}
-  .route-stop:last-child{padding-bottom:0;}
-  .route-stop::before{
-    content:"";position:absolute;left:-26px;top:3px;width:12px;height:12px;border-radius:50%;
-    background:var(--wattle);border:3px solid var(--navy);
-  }
-  .route-stop::after{
-    content:"";position:absolute;left:-21px;top:15px;width:2px;height:calc(100% - 5px);
-    background:repeating-linear-gradient(180deg, var(--wattle) 0 6px, transparent 6px 12px);
-  }
-  .route-stop:last-child::after{display:none;}
-  .route-stop b{display:block;font-size:0.95rem;}
-  .route-stop small{opacity:0.65;font-size:0.78rem;}
-
-  .route-card .foot{
-    display:flex;gap:10px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.15);padding-top:20px;
-  }
-  .foot-chip{
-    background:rgba(255,255,255,0.08);border-radius:10px;padding:9px 12px;font-size:0.78rem;flex:1;text-align:center;
-  }
-  .foot-chip strong{display:block;font-family:'Fraunces',serif;font-size:1.05rem;color:var(--wattle);}
 
   /* ===== Section shell ===== */
   section{padding:84px 0;}
@@ -319,6 +281,18 @@
     background:rgba(255,255,255,0.05);border:1px solid rgba(246,239,227,0.18);
     border-radius:var(--radius);padding:26px;
   }
+  .partner-photo{
+    width:84px;height:84px;border-radius:50%;
+    object-fit:cover;object-position:center;
+    background:var(--sand-2);
+    border:2px solid rgba(246,239,227,0.25);
+    margin-bottom:16px;
+  }
+  .fleet-contact{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+  .btn-outline-light{
+    background:transparent;border-color:rgba(246,239,227,0.4);color:var(--sand);
+  }
+  .btn-outline-light:hover{background:rgba(246,239,227,0.12);}
   .fleet-card .zone{
     font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;
     color:var(--wattle);margin-bottom:10px;display:block;
@@ -378,6 +352,28 @@
   .booking-submit{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;align-items:center;}
   .form-note{font-size:0.82rem;color:var(--ink-soft);}
 
+  .partner-select{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px;}
+  .partner-option{cursor:pointer;display:block;}
+  .partner-option input{position:absolute;opacity:0;pointer-events:none;}
+  .partner-card{
+    display:flex;flex-direction:column;gap:4px;
+    border:2px solid var(--line);border-radius:12px;background:var(--sand);
+    padding:14px 16px;transition:border-color 0.15s ease, background 0.15s ease;
+  }
+  .partner-option input:checked + .partner-card{
+    border-color:var(--wattle-deep);background:rgba(242,169,60,0.12);
+  }
+  .partner-option input:focus-visible + .partner-card{outline:3px solid var(--wattle);outline-offset:2px;}
+  .partner-photo-sm{
+    width:48px;height:48px;border-radius:50%;
+    object-fit:cover;object-position:center;
+    background:var(--sand-2);border:2px solid var(--white);
+    margin-bottom:6px;
+  }
+  .partner-name{font-weight:700;color:var(--navy-deep);font-size:0.95rem;}
+  .partner-areas{font-size:0.78rem;color:var(--ink-soft);}
+  @media (max-width:640px){.partner-select{grid-template-columns:1fr;}}
+
   /* ===== FAQ ===== */
   details{
     background:var(--white);border:1px solid var(--line);border-radius:12px;
@@ -424,7 +420,7 @@
   @media (max-width:980px){
     nav.links, .header-cta{display:none;}
     .mobile-toggle{display:block;}
-    .hero .wrap{grid-template-columns:1fr;}
+    .hero .wrap{max-width:100%;}
     .services-grid, .fleet-grid, .testimonials{grid-template-columns:repeat(2,1fr);}
     .subsidy{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr 1fr;}
@@ -444,6 +440,17 @@
 </style>
 </head>
 <body>
+<script>
+  // Fallback avatar shown until a real photo is placed at the given image path.
+  // Neutral silhouette — no setup needed, safe to leave as-is.
+  const PLACEHOLDER_AVATAR = "data:image/svg+xml;utf8," + encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">' +
+    '<rect width="120" height="120" fill="#EFE4CF"/>' +
+    '<circle cx="60" cy="46" r="22" fill="#0E3A45" opacity="0.35"/>' +
+    '<path d="M18 108c0-23 19-40 42-40s42 17 42 40" fill="#0E3A45" opacity="0.35"/>' +
+    '</svg>'
+  );
+</script>
 
 <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -451,7 +458,7 @@
 <div class="util-bar">
   <div class="wrap">
     <span>Serving Perth metro &amp; all WA suburbs • <strong>24 hours, 7 days</strong></span>
-    <span>NDIS &amp; TUSS registered · <a href="tel:+61400000000">0400 000 000</a></span>
+    <span>NDIS &amp; TUSS registered · <a href="tel:+61452431230">+61 452 431 230</a></span>
   </div>
 </div>
 
@@ -462,7 +469,7 @@
       <span class="mark">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5" stroke="#F6EFE3" stroke-width="1.6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="#F2A93C" stroke-width="1.8" stroke-linecap="round"/></svg>
       </span>
-      Easy Maxi Taxi
+      Perth Maxi Wheelchair
     </a>
     <nav class="links" aria-label="Primary">
       <a href="#services">Services</a>
@@ -473,7 +480,7 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="header-cta">
-      <a class="btn btn-outline btn-sm" href="tel:+61400000000">Call now</a>
+      <a class="btn btn-outline btn-sm" href="tel:+61452431230">Call now</a>
       <a class="btn btn-primary btn-sm" href="#book">Book a ride</a>
     </div>
     <button class="mobile-toggle" aria-label="Open menu" onclick="document.getElementById('mnav').classList.toggle('open')">
@@ -503,9 +510,9 @@
         <h1>A wheelchair taxi in Perth, <em>right when you need one.</em></h1>
         <p class="lede">Door-to-door wheelchair taxis, maxi taxis and NDIS transport across Perth and WA — new vehicles, trained drivers, and a dispatch line that actually picks up. Government-subsidised fares available.</p>
         <div class="hero-ctas">
-          <a href="tel:+61400000000" class="btn btn-primary">
+          <a href="tel:+61452431230" class="btn btn-primary">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Call 0400 000 000
+            Call +61 452 431 230
           </a>
           <a href="#book" class="btn btn-outline">Get a free quote</a>
         </div>
@@ -514,24 +521,6 @@
           <div><strong>24/7</strong><span>every day, no exceptions</span></div>
           <div><strong>12+</strong><span>seats for group bookings</span></div>
           <div><strong>3</strong><span>partner fleets across Perth</span></div>
-        </div>
-      </div>
-
-      <div class="route-card" aria-hidden="true">
-        <div class="route-head">
-          <span>Live booking</span>
-          <span>Today</span>
-        </div>
-        <div class="route-eta">~24 min</div>
-        <div class="route-line">
-          <div class="route-stop"><b>Pickup confirmed</b><small>Nedlands, WA</small></div>
-          <div class="route-stop"><b>Wheelchair-accessible vehicle assigned</b><small>Fleet Partner 02 · Ramp-access maxi</small></div>
-          <div class="route-stop"><b>Driver en route</b><small>Arriving Perth Airport, T1</small></div>
-        </div>
-        <div class="foot">
-          <div class="foot-chip"><strong>2</strong>wheelchairs</div>
-          <div class="foot-chip"><strong>5</strong>ambulant</div>
-          <div class="foot-chip"><strong>NDIS</strong>self-managed</div>
         </div>
       </div>
     </div>
@@ -634,7 +623,7 @@
         <div class="step">
           <div class="num">02</div>
           <h3>Confirm</h3>
-          <p>Dispatch matches you with the nearest available vehicle from our three-partner fleet.</p>
+          <p>You choose the partner covering your area — your message goes straight to them, no middle step.</p>
         </div>
         <div class="step">
           <div class="num">03</div>
@@ -650,27 +639,42 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow" style="background:rgba(246,239,227,0.12);color:var(--sand);">Our network</span>
-        <h2>Three trusted operators. One phone number.</h2>
-        <p>We run bookings across three partner fleets covering greater Perth, so there's almost always a wheelchair-accessible vehicle close to you.</p>
+        <h2>Three trusted operators, each covering their own patch</h2>
+        <p>Message the partner closest to you directly on WhatsApp — no dispatcher in the middle, no waiting on one busy line.</p>
       </div>
       <div class="fleet-grid">
         <div class="fleet-card">
+          <img src="images/mohinder.jpg" alt="Mohinder, Central Fleet Partner" class="partner-photo" onerror="this.onerror=null;this.src=PLACEHOLDER_AVATAR">
           <span class="zone">Zone 01 · Perth &amp; inner suburbs</span>
-          <h3>Central Fleet Partner</h3>
+          <h3>Mohinder</h3>
           <p>CBD, Fremantle, Victoria Park and the river suburbs. Fastest response for hospital and airport runs.</p>
           <div class="fleet-tags"><span>Wheelchair vans</span><span>Maxi taxis</span><span>NDIS</span></div>
+          <div class="fleet-contact">
+            <a href="https://wa.me/61452431230" class="btn btn-white btn-sm">WhatsApp Mohinder</a>
+            <a href="tel:+61452431230" class="btn btn-outline-light btn-sm">Call</a>
+          </div>
         </div>
         <div class="fleet-card">
+          <img src="images/rajan.jpg" alt="Rajan, Northside Fleet Partner" class="partner-photo" onerror="this.onerror=null;this.src=PLACEHOLDER_AVATAR">
           <span class="zone">Zone 02 · Northern suburbs</span>
-          <h3>Northside Fleet Partner</h3>
+          <h3>Rajan</h3>
           <p>Joondalup, Wanneroo, Stirling and surrounds. Regular hospital transfers and school-hours bookings.</p>
           <div class="fleet-tags"><span>Wheelchair vans</span><span>Group transport</span><span>NDIS</span></div>
+          <div class="fleet-contact">
+            <a href="https://wa.me/61450534004" class="btn btn-white btn-sm">WhatsApp Rajan</a>
+            <a href="tel:+61450534004" class="btn btn-outline-light btn-sm">Call</a>
+          </div>
         </div>
         <div class="fleet-card">
+          <img src="images/steve.jpg" alt="Steve, Southside Fleet Partner" class="partner-photo" onerror="this.onerror=null;this.src=PLACEHOLDER_AVATAR">
           <span class="zone">Zone 03 · Southern &amp; eastern suburbs</span>
-          <h3>Southside Fleet Partner</h3>
+          <h3>Steve</h3>
           <p>Rockingham, Armadale, Mandurah and the hills. Longer-distance and party bookings covered here.</p>
           <div class="fleet-tags"><span>Wheelchair vans</span><span>12-seat maxi</span><span>NDIS</span></div>
+          <div class="fleet-contact">
+            <a href="https://wa.me/61498765432" class="btn btn-white btn-sm">WhatsApp Steve</a>
+            <a href="tel:+61498765432" class="btn btn-outline-light btn-sm">Call</a>
+          </div>
         </div>
       </div>
     </div>
@@ -750,10 +754,43 @@
       <div class="section-head">
         <span class="eyebrow">Book now</span>
         <h2>Get a wheelchair taxi on the way</h2>
-        <p>Fill this in and it opens a pre-filled WhatsApp message straight to dispatch — or call if it's urgent.</p>
+        <p>Pick the partner covering your area, fill in your trip details, and it opens a pre-filled WhatsApp message straight to them.</p>
       </div>
 
       <form class="booking" id="bookingForm">
+
+        <div class="field full" style="margin-bottom:28px;">
+          <label>1. Choose your partner by area</label>
+          <div class="partner-select">
+            <label class="partner-option">
+              <input type="radio" name="partner" value="mohinder" data-phone="61452431230" checked>
+              <span class="partner-card">
+                <img src="images/mohinder.jpg" alt="" class="partner-photo-sm" onerror="this.onerror=null;this.src=PLACEHOLDER_AVATAR">
+                <span class="partner-name">Mohinder</span>
+                <span class="partner-areas">CBD · Fremantle · Victoria Park · river suburbs</span>
+              </span>
+            </label>
+            <label class="partner-option">
+              <input type="radio" name="partner" value="rajan" data-phone="61450534004">
+              <span class="partner-card">
+                <img src="images/rajan.jpg" alt="" class="partner-photo-sm" onerror="this.onerror=null;this.src=PLACEHOLDER_AVATAR">
+                <span class="partner-name">Rajan</span>
+                <span class="partner-areas">Joondalup · Wanneroo · Stirling</span>
+              </span>
+            </label>
+            <label class="partner-option">
+              <input type="radio" name="partner" value="steve" data-phone="61498765432">
+              <span class="partner-card">
+                <img src="images/steve.jpg" alt="" class="partner-photo-sm" onerror="this.onerror=null;this.src=PLACEHOLDER_AVATAR">
+                <span class="partner-name">Steve</span>
+                <span class="partner-areas">Rockingham · Armadale · Mandurah · the hills</span>
+              </span>
+            </label>
+          </div>
+          <p class="form-note" style="margin-top:10px;">Not sure which one covers you? <a href="tel:+61452431230" style="font-weight:700;color:var(--navy-deep);">Call Mohinder on +61 452 431 230</a> and we'll point you to the right partner.</p>
+        </div>
+
+        <div class="field full"><label style="margin-bottom:2px;">2. Your trip details</label></div>
         <div class="booking-grid">
           <div class="field">
             <label for="name">Full name</label>
@@ -810,8 +847,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.87 11.87 0 0012.06 0C5.5 0 .17 5.33.17 11.9c0 2.1.55 4.14 1.6 5.94L0 24l6.32-1.66a11.86 11.86 0 005.72 1.46h.01c6.56 0 11.9-5.33 11.9-11.9 0-3.18-1.24-6.17-3.43-8.42zM12.05 21.6a9.7 9.7 0 01-4.95-1.36l-.35-.21-3.75.98 1-3.65-.23-.37a9.75 9.75 0 01-1.5-5.2c0-5.38 4.38-9.76 9.78-9.76a9.7 9.7 0 016.9 2.87 9.7 9.7 0 012.86 6.9c0 5.39-4.38 9.8-9.76 9.8z"/></svg>
             Send booking via WhatsApp
           </button>
-          <a href="tel:+61400000000" class="btn btn-outline">Or call 0400 000 000</a>
-          <span class="form-note">We reply within minutes, day or night.</span>
+          <span class="form-note">Opens WhatsApp with your chosen partner, message pre-filled — just hit send.</span>
         </div>
       </form>
     </div>
@@ -856,7 +892,7 @@
         <h2>Need a wheelchair taxi right now?</h2>
         <p>Our dispatch line is open 24 hours a day, every day of the year. Call, WhatsApp, or fill in the form above.</p>
         <div class="hero-ctas">
-          <a href="tel:+61400000000" class="btn btn-primary">Call 0400 000 000</a>
+          <a href="tel:+61452431230" class="btn btn-primary">Call +61 452 431 230</a>
           <a href="#book" class="btn btn-white">Book online</a>
         </div>
       </div>
@@ -894,7 +930,7 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:+61400000000">0400 000 000</a></li>
+          <li><a href="tel:+61452431230">+61 452 431 230</a></li>
           <li><a href="mailto:bookings@perthmaxiwheelchair.com.au">bookings@perthmaxiwheelchair.com.au</a></li>
           <li>Perth, Western Australia</li>
         </ul>
@@ -909,7 +945,7 @@
 
 <!-- Sticky mobile CTA -->
 <div class="mobile-bar">
-  <a href="tel:+61400000000" class="btn btn-outline btn-sm">Call now</a>
+  <a href="tel:+61452431230" class="btn btn-outline btn-sm">Call now</a>
   <a href="#book" class="btn btn-primary btn-sm">Book a ride</a>
 </div>
 
@@ -918,8 +954,11 @@
     e.preventDefault();
     const val = id => document.getElementById(id).value;
     const ndis = document.querySelector('input[name="ndis"]:checked').value;
+    const partnerInput = document.querySelector('input[name="partner"]:checked');
+    const partnerPhone = partnerInput.getAttribute('data-phone');
+    const partnerName = partnerInput.closest('.partner-option').querySelector('.partner-name').textContent;
     const msg =
-`New booking request:
+`New booking request (${partnerName}):
 Name: ${val('name')}
 Phone: ${val('phone')}
 Pickup: ${val('pickup')}
@@ -930,7 +969,7 @@ Wheelchairs: ${val('wheelchairs')}
 Passengers: ${val('passengers')}
 Booking type: ${ndis}
 Notes: ${val('notes') || 'None'}`;
-    const url = 'https://wa.me/61400000000?text=' + encodeURIComponent(msg);
+    const url = 'https://wa.me/' + partnerPhone + '?text=' + encodeURIComponent(msg);
     window.open(url, '_blank');
   });
 </script>
